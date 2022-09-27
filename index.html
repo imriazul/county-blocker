@@ -36,13 +36,11 @@
         jQuery.get("http://ipinfo.io", function (ipdata) {
             console.log(ipdata);
 
-            if(ipdata.country === 'BD' || ipdata.country === 'US'){
+            if(ipdata.country == 'BD'){
                 $(window).load(function () {
                 $('#alart-modal').modal('show');
             });
             }
-
-
 
         }, "jsonp");
 
